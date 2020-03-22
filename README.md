@@ -1,6 +1,6 @@
-# TypeScript + Webpack + Three.js template
+# WebGL playground
 
-WebGL playground inspired from: <https://github.com/mterczynski/typescript-webpack-threejs-template>
+inspired from: <https://github.com/mterczynski/typescript-webpack-threejs-template>
 
 ## Install dependencies
 
