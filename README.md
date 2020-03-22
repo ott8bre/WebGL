@@ -8,8 +8,8 @@ inspired from: <https://github.com/mterczynski/typescript-webpack-threejs-templa
 
 ## Run project in watch mode
 
-    npm start
+    npm run start
 
 ## Build project
 
-    npm build
+    npm run build
