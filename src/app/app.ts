@@ -1,5 +1,6 @@
 import { Color, PerspectiveCamera, Scene, Vector3, WebGLRenderer, DirectionalLight } from 'three';
 import { Brick } from './brick';
+import { Wheel } from './wheel';
 
 export class App {
   private readonly scene = new Scene();
@@ -11,10 +12,14 @@ export class App {
   });
 
   private brick: Brick;
+  private wheel: Wheel;
 
   constructor() {
     this.brick = new Brick(100, new Color(0x44aa88));
     this.scene.add(this.brick);
+
+    this.wheel = new Wheel(30, 200, new Color('rgb(50,50,200)'));
+    this.scene.add(this.wheel);
 
     this.light.position.set(-1, 2, 4);
     this.scene.add(this.light);
@@ -40,5 +45,6 @@ export class App {
 
     this.adjustCanvasSize();
     this.brick.rotateY(0.01);
+    this.wheel.rotateX(0.01);
   }
 }
