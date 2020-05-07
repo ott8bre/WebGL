@@ -24,6 +24,6 @@ export class Wheel extends Mesh {
     this.geometry = new ExtrudeGeometry( shape, extrudeSettings ),
     this.material = new MeshPhongMaterial({ color });
 
-    this.rotateZ(Math.PI * 0.125);
+    this.rotateZ(Math.PI * 0.25);
   }
 }
